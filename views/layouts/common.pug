@@ -1,0 +1,18 @@
+html
+	head
+		link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css")
+		meta(charset="utf-8")
+	body
+		nav(class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top")
+			div(class="collapse navbar-collapse")
+				ul(class="navbar-nav mr-auto")
+					li(class="nav-item")
+						a(class="nav-link" href="/") Home
+					li(class="nav-item")
+						a(class="nav-link" href="/users") Users
+				form(class="form-inline my-2 my-lg-0")
+					input(class="form-control mr-sm-2" type="search" placeholder="Search...")
+					button(class="btn btn-outline-success my-2 my-sm-0" type="submit") Search
+					a(class="btn btn-primary ml-2" href="/users/create") Sign up
+	.container.pt-5
+		block content
