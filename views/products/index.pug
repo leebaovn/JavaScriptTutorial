@@ -1,0 +1,13 @@
+extends ../layouts/common
+block content
+    h1 Products
+    .row.row-cols-1.row-cols-md-3
+        each product in products
+            .col
+                .card.h-100(style="width:18rem;")
+                    img.card-img-top(src= product.image, alt="This is an image")
+                    .card-body
+                        h5.card-title #{product.name}
+                        p.card-text #{product.description}
+                        a.btn.btn-primary(href='#') Add to cart
+                    
